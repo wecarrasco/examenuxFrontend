@@ -5,18 +5,16 @@
 </template>
 
 <script>
-import Objeto from './components/objeto.vue'
-import crearObjeto from './components/crearObjeto.vue'
-import eliminarObjeto from './components/eliminarObjeto.vue'
-import editarObjeto from './components/editarObjeto.vue'
+import Hechicero from './components/hechicero.vue'
+import editarHechicero from './components/editarHechicero.vue'
+import home from './components/home.vue'
 
 export default {
   name: 'app',
   components: {
-    Objeto,
-    crearObjeto,
-    eliminarObjeto,
-    editarObjeto
+    Hechicero,
+    editarHechicero,
+    home
   },
   mounted(){
 

@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Objeto from './components/objeto.vue'
-import crearObjeto from './components/crearObjeto.vue'
-import eliminarObjeto from './components/eliminarObjeto.vue'
-import editarObjeto from './components/editarObjeto.vue'
+import Hechicero from './components/hechicero.vue'
+import editarHechicero from './components/editarHechicero.vue'
+import signup from './components/signup.vue'
+import home from './components/home.vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
@@ -17,22 +17,22 @@ const router = new VueRouter({
     {
       name: 'LogIn',
       path: '/',
-      component: Objeto
+      component: Hechicero
     },
     {
-      name: 'CrearObjeto',
-      path: '/crearobjeto',
-      component: crearObjeto
+      name: 'EditarHechicero',
+      path: '/editarhechicero',
+      component: editarHechicero
     },
     {
-      name: 'EliminarObjeto',
-      path: '/eliminarObjeto',
-      component: eliminarObjeto
+      name: 'signup',
+      path: '/signup',
+      component: signup
     },
     {
-      name: 'EditarObjeto',
-      path: '/editarObjeto',
-      component: editarObjeto
+      name: 'home',
+      path: '/home',
+      component: home
     }
   ]
 })
