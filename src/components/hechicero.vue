@@ -37,7 +37,7 @@ export default {
           type:  "error",
         });
       }else{
-        this.$http.post("http://localhost:8000/monasterio/login", this.user).then((res)=>{
+        this.$http.post(`${baseUrl.uri}/monasterio/login`, this.user).then((res)=>{
           if (res.body.success === true) {
             localStorage.setItem("username", this.user.username);
             sweetAlert({
